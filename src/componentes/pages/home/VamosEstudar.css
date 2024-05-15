@@ -1,0 +1,52 @@
+.container--vamosestudar{
+    width: 90%;
+    margin: auto;
+    padding-top: 2rem;
+    
+}
+
+.container--vamosestudar--h1{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: -0.5rem;
+    font-family: monospace;
+    color: #ff6b6b;
+}
+
+.container--cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.card--vamosestudar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20rem;
+    padding: 2rem;
+    margin: 1rem;
+}
+
+.icon--card{
+    font-size: 3rem;
+    background-color: #ff6b6b;
+    color: white;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+.card--vamosestudar h1{
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.card--vamosestudar p{
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: monospace;
+    margin-top: -1rem;
+}
