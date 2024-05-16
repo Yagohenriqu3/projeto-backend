@@ -6,7 +6,7 @@ function Artigos (){
     return(
     <div className={style.container}>
     
-        <h1>Artigos</h1>
+        <h1>Saiba mais sobre os cursos</h1>
         
         <div className={style.containerArtigos}>
             <CardArtigo

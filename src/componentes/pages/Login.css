@@ -1,0 +1,51 @@
+.container-login{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem 2rem;
+}
+
+.container-login form{
+    border: solid 1px rgba(0, 0, 0, 0.366);
+    padding: 2rem 3rem;
+    border-radius: 20px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+}
+
+.container-login form h1{
+    font-family: monospace;
+    text-align: center;
+}
+
+.input-login{
+    margin: 1rem;
+}
+
+.input-login input{
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    border: solid 1px rgba(0, 0, 0, 0.39);
+}
+
+.button-login input{
+    border: solid 1px #FF6B6B;
+    background-color: #FF6B6B;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.button-login input:hover{
+    background-color: #e75e5e;
+}
+.cadastro-login p {
+    font-family: monospace;
+}
+.cadastro-login p a{
+    text-decoration: none;
+    color: #e75e5e;
+
+}

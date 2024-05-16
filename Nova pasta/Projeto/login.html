@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" href="login.css">
+  <meta charset="UTF-8" />
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+  <div class="container" >
+    <a class="links" id="paracadastro"></a>
+    <a class="links" id="paralogin"></a>
+     
+    <div class="content">      
+      <!--FORMULÁRIO DE LOGIN-->
+      <div id="login">
+        <form method="post" action=""> 
+          <h1>Login</h1> 
+          <p> 
+            <label for="nome_login">Seu nome</label>
+            <input id="nome_login" name="nome_login" required="required" type="text" placeholder="ex. DIGITE AQUI SEU E-MAIL"/>
+          </p>
+           
+          <p> 
+            <label for="email_login">Seu e-mail</label>
+            <input id="email_login" name="email_login" required="required" type="password" placeholder="ex. DIGITE SUA SENHA" /> 
+          </p>
+           
+          <p> 
+            <input type="checkbox" name="manterlogado" id="manterlogado" value="" /> 
+            <label for="manterlogado">Manter-me logado</label>
+          </p>
+           
+          <p> 
+            <input type="submit" value="Entrar" /> 
+          </p>
+           
+          <p class="link">
+            Ainda não tem conta?
+            <a href="#paracadastro">Cadastre-se</a>
+          </p>
+        </form>
+      </div>
+ 
+      <!--FORMULÁRIO DE CADASTRO-->
+      <div id="cadastro">
+        <form method="post" action=""> 
+          <h1>Cadastro</h1> 
+           
+          <p> 
+            <label for="nome_cad">Seu nome</label>
+            <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="Seu Nome" />
+          </p>
+           
+          <p> 
+            <label for="email_cad">Seu e-mail</label>
+            <input id="email_cad" name="email_cad" required="required" type="email" placeholder="seuemail@hotmail.com"/> 
+          </p>
+
+          <p> 
+            <label for="cpf_cad">Seu CPF</label>
+            <input id="cpf_cad" name="cpf_cad" required="required" type="text" placeholder="CPF" />
+          </p>
+           
+          <p> 
+            <label for="senha_cad">Sua senha</label>
+            <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="ex. 1234"/>
+          </p>
+
+          <p> 
+            <label for="confirmarsenha_cad">Confirme sua senha</label>
+            <input id="confirmarsenha_cad" name="confirmarsenha_cad" required="required" type="password" placeholder="ex. 1234"/>
+          </p>
+
+          <p> 
+            <label for="genero_cad">Gênero</label>
+            <input id="genero_cad" name="genero_cad" required="required" type="text" placeholder="Cis, trans, não binário, etc.." />
+         </p>
+
+         <p> 
+            <label for="nomemae_cad">Nome da Mãe</label>
+            <input id="nomemae_cad" name="nomemae_cad" required="required" type="text" placeholder="Nome da Mãe" />
+          </p>
+
+          <p> 
+            <label for="cel_cad">Seu nome</label>
+            <input id="cel_cad" name="cel_cad" required="required" type="text" placeholder="DDD (XX) X-XXXXXXXX" />
+          </p>
+          
+        
+
+           
+          <p> 
+            <input type="submit" value="Cadastrar"/> 
+          </p>
+           
+          <p class="link">  
+            Já tem conta?
+            <a href="#paralogin"> Ir para Login </a>
+          </p>
+        </form>
+      </div>
+
+    </div>
+  </div>
+  <script>
+    function validarSenha() {
+      var senha = document.getElementById("senha_cad").value;
+      var confirmarSenha = document.getElementById("confirmarsenha_cad").value;
+      if (senha !== confirmarSenha) {
+        alert("As senhas não coincidem.");
+        return false;
+      }
+      return true;
+    }
+  </script>
+</body>
+</html>  

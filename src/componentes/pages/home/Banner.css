@@ -1,0 +1,45 @@
+.container--banner--home{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+.banner--img--pequeno{
+    display: none;
+}
+
+.container--banner--home a{
+    width: 30%;
+}
+
+.container--banner--home a img{
+    width: 100%;
+    display: flex;
+}
+
+@media (max-width: 768px){
+    .container--banner--home{
+        flex-direction: column;
+    } 
+
+    .container--banner--home a{
+        width: 90%;
+    }
+}
+
+@media(max-width: 768px){
+    .banner--img--grande{
+        display: none;
+    }
+    .banner--img--pequeno{
+        display: block;
+    }
+    .container--banner--home a{
+        margin-bottom: 1rem;
+        margin-top: 2rem;
+    }
+}

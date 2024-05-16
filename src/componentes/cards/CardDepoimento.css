@@ -1,0 +1,41 @@
+.card--depoimento{
+    width: 100%;
+    display: flex;
+    
+    justify-content: center;
+}
+
+.card--body--depoimento{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-color: rgba(224, 224, 224, 0.284);
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 10px;
+    border: solid 1px rgba(0, 0, 0, 0.108);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.227);
+}
+
+.card--body--depoimento h5{
+    font-size: 1.5rem;
+    font-family: monospace;
+}
+
+.card--body--depoimento h6{
+    font-size: 1rem;
+}
+.card--body--depoimento p{
+    font-family: monospace;
+    font-size: 1.2rem;
+}
+.card--body--depoimento h5,h6,p{
+    margin: 0.5rem;
+    color: rgb(61, 61, 61);
+}
+
+@media (max-width: 768px){
+    .card--body--depoimento{
+        width: 90%;
+    }
+}

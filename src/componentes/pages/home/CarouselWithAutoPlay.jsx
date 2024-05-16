@@ -21,7 +21,7 @@ const CarouselWithAutoPlay = ({ images }) => {
 
     .carousel-img {
       width: 100%;
-      height: 30rem;
+      height: 35rem;
       object-fit: cover;
       object-position: 50% 20%;
       transition: transform 0.5s ease-in-out;

@@ -26,3 +26,12 @@
     font-size: 1.2rem;
     font-family: sans-serif;
 }
+
+@media (max-width: 768px){
+    .container--cadastre{
+        height: 20rem;
+    }
+    .container--cadastre div h1{
+        margin-bottom: 1rem;
+    }
+}

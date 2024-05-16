@@ -69,3 +69,75 @@
     margin-left:-1rem;
     font-family: sans-serif;
 }
+
+.logomenumobile{
+    display: none;
+}
+
+@media (max-width: 768px){
+    .logomenucomputer{
+        display: none;
+    }
+
+    .logomenumobile{
+        display: block;
+    }
+
+    .logomenumobile img{
+        width: 15rem;
+        margin: auto;
+        display: flex;
+    }
+
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .container nav ul li a img{
+        margin-top: 5px;
+        width: 10em;
+        padding-right: 20px;
+    }
+    
+    .container nav{
+        margin: 10px 50px;
+        
+        text-wrap: wrap;
+        
+    }
+    
+    .container nav ul {
+        list-style: none;
+        display: flex;
+        align-items: flex-end;
+      
+    }
+    
+    .container nav ul li a{
+       
+        padding: 5px 8px;
+        text-decoration: none;
+    }
+    
+    
+    .container a{
+        color: #ff6b6b;
+        border-radius: 5px;
+        font-weight: bolder;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1rem;
+    }
+    
+    .container a:hover{
+        transition: 0.5s;  
+        font-weight: bolder;
+        color: #f52727;
+    }
+    
+    .divLogin{
+        display: none;  
+    }
+   
+}

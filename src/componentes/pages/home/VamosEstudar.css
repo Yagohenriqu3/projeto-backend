@@ -50,3 +50,11 @@
     font-family: monospace;
     margin-top: -1rem;
 }
+
+
+@media(max-width: 768px){
+    .container--cards{
+        display: flex;
+        flex-direction: column;
+    }
+}

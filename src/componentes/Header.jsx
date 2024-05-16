@@ -9,12 +9,18 @@ function Header (){
     return(
         <div className={Style.container}>
             <div>
+                    <Link
+                        to='/' className={Style.logomenumobile}> <img src={Logo} alt='Logo do site'/>
+                    </Link>
                 <nav>
                     <ul>
-                        <li>
+                        <li className={Style.logomenucomputer}>
                             <Link
                             to='/'> <img src={Logo} alt='Logo do site'/>
                             </Link>
+                        </li>
+                        <li>
+                            <Link to='/'>Home</Link>
                         </li>
                         <li>
                             <Link to='/cursos'>Cursos</Link>
@@ -28,10 +34,14 @@ function Header (){
                     </ul>
                 </nav>
             </div>
-            <div className={Style.divLogin}>
-                <FaUser className={Style.iconUsuario} />
-                <h2>Login</h2>
-            </div>
+                    
+
+            <Link to='/login'>
+                <div className={Style.divLogin}>
+                    <FaUser className={Style.iconUsuario} />
+                    <h2>Login</h2>
+                </div>
+            </Link>
         </div>
     )
     
