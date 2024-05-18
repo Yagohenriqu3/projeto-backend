@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futuro Certo - Direito</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .section-direito {
+            width: 100%;
+            height: 50vh;
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url('../img/direito-2.jpeg');
+            position: relative;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-end;
+            text-align: left;
+            padding: 0 20px;
+            box-sizing: border-box;
+            font-size: 3.5rem;
+        }
+
+        #title-sobre {
+            color: #ff6b6b;
+            font-weight: bold;
+            font-size: 2.7em;
+            margin-bottom: 20px;
+        }
+        #title-para {
+            color: #ff6b6b;
+            font-weight: bold;
+            font-size: 2.7em;
+            margin-bottom: 20px;
+        }
+
+        .conteudo {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 20px;
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .sobre-direito, .card-para-quem {
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 750px;
+            margin-bottom: 20px;
+            text-align: left;
+            align-items: center;
+            }
+
+        .card-para-quem{
+            display: flex;
+        }
+
+        .card-para-quem img {
+        width: 20rem;
+        border-radius: 10px;
+        margin-right: 0.5rem;
+        margin: 2rem;
+        }
+
+       
+
+        .sobre-direito, .card-para-quem {
+            flex: 2;
+            margin-right: 20px;
+            color: #555;
+        }
+
+
+        .card {
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(68, 68, 68, 0.1);
+            padding: 20px;
+            width: 100%;
+            max-width: 300px;
+            margin-left: 20px;
+        }
+
+        .card-title {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            color: #333;
+            text-align: center;
+        }
+
+        .card-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .card-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .card-icon {
+            margin-right: 9px;
+            color: #00aaff;
+            font-size: 1.5em;
+        }
+
+        .card-text {
+            color: #555;
+        }
+
+        .card-text a {
+            color: #00aaff;
+            text-decoration: none;
+        }
+
+        .card-text a:hover {
+            text-decoration: underline;
+        }
+
+        .button {
+            text-align: center;
+            text-decoration: none;
+            background-color: #ff6b6b;
+            color: #fff;
+            border: none;
+            padding: 20px 20px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+            border-radius: 10px;
+            display: block;
+            width: 400px;
+            margin: auto;
+        }
+
+        .button:hover {
+            background-color: #010e16;
+        }
+
+        @media (max-width: 768px) {
+            .conteudo {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                margin-top: 20px;
+                width: 100%;
+                max-width: 400px;
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="section-direito">
+        <h1>Direito</h1>
+    </section>
+    <section class="conteudo">
+        <div class="sobre-direito">
+            <h1 id="title-sobre">Sobre </h1>
+            <p>O curso de Direito prepara profissionais para atuar no campo jurídico, abrangendo áreas como advocacia, magistratura, consultoria, conciliação e mediação.</p>
+            <p>Ao longo do curso, os estudantes aprendem sobre a estrutura do sistema jurídico, legislação, jurisprudência, doutrina e princípios éticos que regem a profissão.</p>
+            <p>A formação em Direito envolve o estudo aprofundado das leis, sua aplicação prática e a resolução de conflitos, buscando sempre a justiça e a equidade.</p>
+            <p>Durante a graduação, os alunos têm contato com casos reais, participam de simulações de julgamentos e debates, o que contribui para sua formação prática e para o desenvolvimento de habilidades essenciais para o exercício da profissão.</p>
+            <p>Ao concluir o curso, o bacharel em Direito estará apto a exercer diversas atividades, como elaboração de pareceres jurídicos, representação em juízo, mediação de conflitos, consultoria jurídica, entre outras, sempre pautado pela ética e pela responsabilidade social.</p>
+        </div>
+
+        <div class="card">
+            <div class="card-title">Salário de um Advogado</div>
+            <div class="card-item">
+                <span class="card-icon">&#128176;</span>
+                <div class="card-text">Salário Inicial: R$ 3.000,00 - R$ 5.000,00</div>
+            </div>
+            <div class="card-item">
+                <span class="card-icon">&#128200;</span>
+                <div class="card-text">Salário Intermediário: R$ 8.000,00 - R$ 15.000,00</div>
+            </div>
+            <div class="card-item">
+                <span class="card-icon">&#127942;</span>
+                <div class="card-text">Salário Nível Sênior: R$ 20.000,00 - R$ 35.000,00+</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="conteudo">
+        <div class="card-para-quem">
+            <div><img src="../img/direitomini.jpg" alt="Descrição da imagem"></div>
+
+            <div><h2 id="title-sobre">Para quem é o curso de Direito?</h2>
+            <p>O curso de Direito é ideal para estudantes interessados em compreender a estrutura do sistema jurídico, as leis, a jurisprudência e os princípios éticos que regem a profissão. É indicado para quem deseja atuar como advogado, juiz, promotor, defensor público, consultor jurídico, entre outras carreiras do campo jurídico.</p>
+            <p>Além disso, o curso também é indicado para quem tem interesse em áreas relacionadas, como conciliação, mediação e arbitragem, e busca uma formação sólida para exercer atividades que promovam a justiça e a equidade na sociedade.</p>
+            </div>
+        </div>
+    </section>
+
+    <a href="https://www.unisuam.edu.br/graduacao/direito/" class="button">Matricule-se</a>
+</body>
+</html>
+

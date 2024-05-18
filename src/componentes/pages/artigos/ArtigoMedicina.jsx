@@ -1,5 +1,5 @@
 import './ArtigoPage.css'
-import Imagem1 from './imgs/mathieu-stern-nDDVQzkc_fc-unsplash.jpg'
+
 import Imagem2 from './imgs/unseen-studio-s9CC2SKySJM-unsplash.jpg'
 import Imagem3 from './imgs/e83584365b58_justica.jpg'
 import Imagem4 from './imgs/original-d3d65a2a9398200fd2c0f7872fd85689-1-1024x683.jpg'
