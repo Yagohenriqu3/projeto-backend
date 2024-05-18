@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Psicologia</title>
+    <style>
+
+
+
+.container-artigo {
+    display: flex;
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.main-content-artigo {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+}
+
+.main-content-artigo article {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.main-content-artigo h1 {
+    font-size: 36px;
+    color:  #ff6b6b;
+    margin-bottom: 20px;
+}
+
+.main-content-artigo h2 {
+    font-size: 28px;
+    color: #ff6b6b;
+    margin-bottom: 10px;
+}
+
+.main-content-artigo p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.main-content-artigo ul {
+    list-style: none;
+    padding: 0;
+}
+
+.main-content-artigo ul li {
+    background: url('icon-check.png') no-repeat left center;
+    background-size: 20px;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.main-content-artigo img {
+    display: block;
+    margin: px auto;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.courses-container-artigo,
+.recomendados-container-artigo {
+    flex: 1;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.courses-container-artigo h2,
+.recomendados-container-artigo h2 {
+    font-size: 24px;
+    color:  #ff6b6b;
+    margin-bottom: 20px;
+}
+
+.course-link-artigo {
+    display: block;
+    text-decoration: none;
+    color: #040403;
+    background-color: #ffca3a;
+    padding: 15px 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.course-link-artigo:hover {
+    background-color: #ff6b6b;
+}
+
+@media (max-width: 768px) {
+    .container-artigo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-content-artigo article {
+        padding: 20px;
+    }
+
+    .courses-container-artigo,
+    .recomendados-container-artigo {
+        margin-top: 20px;
+    }
+
+    .course-link-artigo {
+        margin-bottom: 20px;
+    }
+}
+
+    </style>
+
+</head>
+<body>
+
+<section class="main-content-artigo">
+    <div class="container-artigo">
+        <div class="main-content-artigo">
+            <article>
+                <h1>Curso de Psicologia</h1>
+                <img src="imagem psico/mathieu-stern-nDDVQzkc_fc-unsplash.jpg" alt="Imagem do curso de Psicologia">
+                <h2>Descrição do Curso</h2>
+                <p>Bem-vindo ao fascinante mundo da Psicologia! Este curso oferece uma jornada de descoberta dos intrincados mecanismos da mente humana. Desde as teorias fundamentais até as aplicações práticas, você será guiado por um mergulho profundo nas diversas áreas da psicologia.</p>
+                <img src="imagem psico/unseen-studio-s9CC2SKySJM-unsplash.jpg" alt="Imagem Descrição">
+                <h2>Por que se Matricular?</h2> 
+                <ul>
+                    <li>Exploração Profunda: Explore os mistérios da mente humana de uma forma envolvente e acessível.</li>
+                    <li>Aplicações Práticas: Aprenda como os princípios psicológicos se aplicam em diversas áreas da vida, desde o ambiente de trabalho até os relacionamentos pessoais.</li>
+                    <li>Experiência Interativa: Desfrute de uma experiência de aprendizado dinâmica, com atividades práticas, estudos de caso e discussões em grupo.</li>
+                    <li>Suporte Especializado: Conte com o apoio de instrutores altamente qualificados, prontos para esclarecer dúvidas e oferecer orientação personalizada.</li>
+                    <li>Certificado Reconhecido: Ao concluir o curso, receba um certificado que comprova sua expertise em psicologia, enriquecendo seu currículo e suas oportunidades profissionais.</li>
+                </ul>
+            </article>
+        </div>
+
+        <div class="courses-container-artigo">
+            <h2>Outros Artigos</h2>
+            <a href="#" class="course-link-artigo">Direito</a>
+            <a href="#" class="course-link-artigo">Física</a>
+            <a href="#" class="course-link-artigo">Medicina</a>
+            <a href="#" class="course-link-artigo">Educação Física</a>
+            <a href="#" class="course-link-artigo">Análise e Desenvolvimento de Sistemas</a>
+
+            <div class="recomendados-container-artigo">
+                <h2>Cursos em Promoção</h2>
+                <a href="#" class="course-link-artigo">Direito</a>
+                <img src="imagem cursos em promo/e83584365b58_justica.jpg" alt="Imagem de direito">
+                <a href="#" class="course-link-artigo">Medicina</a>
+                <img src="imagem cursos em promo/original-d3d65a2a9398200fd2c0f7872fd85689-1-1024x683.jpg" alt="Imagem de medicina">
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+
+</body>
+</html>

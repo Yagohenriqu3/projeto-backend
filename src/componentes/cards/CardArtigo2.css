@@ -1,0 +1,113 @@
+.container-cardartigos2{
+    width: 50rem;
+    height: 17rem;
+    display: flex;
+    background-color: rgba(209, 209, 209, 0.245);
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.imagem-div-cardartigos2{
+    width: 50%;
+}
+.imagem-div-cardartigos2 img {
+    width: 100%;
+}
+
+.descricao-div-cardartigos2{
+    width: 100%;
+    padding-left: 1rem;
+    
+}
+
+.descricao-div-cardartigos2 h1{
+    font-family: monospace;
+    font-size: 2rem;
+    color: rgb(49, 49, 49);
+}
+
+.descricao-div-cardartigos2 p{
+    font-family: monospace;
+    font-size: 1.1rem;
+    color: rgb(49, 49, 49);
+}
+
+.botao-div-cardartigos2{
+    background-color: #FF6B6B;
+    border: solid 1px #c04d4d69;
+    padding: .5rem 1.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    transition: 0.5s;
+
+}
+
+.botao-div-cardartigos2:hover{
+    background-color: #000000;
+}
+
+@media (max-width: 768px){
+    .container-cardartigos2{
+        width: 20rem;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(209, 209, 209, 0.245);
+        padding: 2rem 0rem;
+        margin-bottom: 2rem;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        margin-bottom: 2rem;
+    
+    }
+    .imagem-div-cardartigos2{
+        width: 100%;
+    }
+    
+    
+    .descricao-div-cardartigos2{
+        width: 100%;
+        padding-left: 0rem;
+        padding: 0.5rem;
+        text-align: center;
+        
+    }
+    
+    .descricao-div-cardartigos2 h1{
+        font-family: monospace;
+        font-size: 2rem;
+        color: rgb(49, 49, 49);
+    }
+    
+    .descricao-div-cardartigos2 p{
+        font-family: monospace;
+        font-size: 1.1rem;
+        color: rgb(49, 49, 49);
+    }
+    
+    .botao-div-cardartigos2{
+        background-color: #FF6B6B;
+        border: solid 1px #c04d4d69;
+        padding: .5rem 1.5rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+        font-family: sans-serif;
+        border-radius: 10px;
+        cursor: pointer;
+        color: white;
+        transition: 0.5s;
+    
+    }
+    
+    .botao-div-cardartigos2:hover{
+        background-color: #000000;
+    }
+}

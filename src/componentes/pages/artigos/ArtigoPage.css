@@ -1,0 +1,123 @@
+.container-artigo {
+    display: flex;
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-top: -4rem;
+}
+
+.main-content-artigo {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+}
+
+.main-content-artigo article {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.main-content-artigo h1 {
+    font-size: 36px;
+    color:  #ff6b6b;
+    margin-bottom: 20px;
+}
+
+.main-content-artigo h2 {
+    font-size: 28px;
+    color: #ff6b6b;
+    margin-bottom: 10px;
+}
+
+.main-content-artigo p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.main-content-artigo ul {
+    list-style: none;
+    padding: 0;
+}
+
+.main-content-artigo ul li {
+    background: url('icon-check.png') no-repeat left center;
+    background-size: 20px;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.main-content-artigo img {
+    display: block;
+    margin: px auto;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.courses-container-artigo,
+.recomendados-container-artigo {
+    flex: 1;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.courses-container-artigo h2,
+.recomendados-container-artigo h2 {
+    font-size: 24px;
+    color:  #ff6b6b;
+    margin-bottom: 20px;
+    margin-top: 1rem;
+}
+
+.courses-container-artigo a,
+.recomendados-container-artigo a{
+    margin-top: 1rem;
+}
+
+.course-link-artigo {
+    display: block;
+    text-decoration: none;
+    color: #040403;
+    background-color: #ffca3a;
+    padding: 15px 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.course-link-artigo:hover {
+    background-color: #ff6b6b;
+}
+
+@media (max-width: 768px) {
+    .container-artigo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-content-artigo article {
+        padding: 20px;
+    }
+
+    .courses-container-artigo,
+    .recomendados-container-artigo {
+        margin-top: 20px;
+    }
+
+    .course-link-artigo {
+        margin-bottom: 20px;
+    }
+}
