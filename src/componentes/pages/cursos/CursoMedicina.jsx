@@ -5,7 +5,7 @@ import Medicinamini from './imgscursos/Medicinamini.jpg'
 export default function CursoMedicina() {
   return (
     <div>
-      <section class="section-direito">
+      <section class="section-medicina">
         <h1>Medicina</h1>
     </section>
     <section className="conteudo">
@@ -37,6 +37,7 @@ Ao concluir o curso, o médico estará apto a desempenhar diversas atividades, c
                 <div className="card-text">Salário Nível Sênior: R$ 20.000,00 - R$ 35.000,00+</div>
             </div>
         </div>
+        
     </section>
 
     <section className="conteudo">

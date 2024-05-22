@@ -2,9 +2,18 @@ import { FaGraduationCap, FaPercentage, FaClipboardCheck } from 'react-icons/fa'
 
 import './VamosEstudar.css'
 
+import { useInView } from 'react-intersection-observer';
+
 export default function VamosEstudar() {
+
+    const {ref, inView} = useInView({
+        triggerOnce: true,
+        threshold: 0.5,
+        
+      });
+
   return (
-    <div>
+    <div className={`container--vamosestudar--efeito ${inView ? 'active' : ''}`} ref={ref}>
        <section className="container--vamosestudar">
             <h1 className='container--vamosestudar--h1'>Vamos começar a estudar?</h1>
             <div className="container--cards">

@@ -5,7 +5,7 @@ import Direitomini from './imgscursos/direitomini.jpg'
 export default function CursoDireito() {
   return (
     <div>
-      <section class="section-direito">
+      <section class="section-direito1">
         <h1>Direito</h1>
     </section>
     <section className="conteudo">

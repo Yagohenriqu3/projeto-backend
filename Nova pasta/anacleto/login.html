@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" href="login.css">
+  <meta charset="UTF-8" />
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+  <div id="login_page" class="container" >
+    <a class="links" id="paracadastro"></a>
+    <a class="links" id="paralogin"></a>
+     
+    <div class="content-login">      
+      <!--FORMULÁRIO DE LOGIN-->
+      <div id="login">
+        <form method="post" action=""> 
+          <h1>Login</h1> 
+          <p class="paragrafo-login"> 
+            <label for="nome_login">Seu nome de usuário ou email </label>
+            <input id="nome_login" name="nome_login" required="required" type="text" placeholder="ex. DIGITE AQUI SEU E-MAIL"/>
+          </p>
+           
+          <p> 
+            <label for="email_login">Sua Senha</label>
+            <input id="email_login" name="email_login" required="required" type="password" placeholder="ex. DIGITE SUA SENHA" /> 
+          </p>
+           
+          <p> 
+            <input type="checkbox" name="manterlogado" id="manterlogado" value="" /> 
+            <label for="manterlogado">Manter-me logado</label>
+          </p>
+           
+          <p> 
+            <input type="submit" value="Entrar" /> 
+          </p>
+           
+          <p class="link">
+            Ainda não tem conta?
+            <a href="#paracadastro">Cadastre-se</a>
+          </p>
+        </form>
+      </div>
+ 
+      <!--FORMULÁRIO DE CADASTRO-->
+      <div id="cadastro">
+        <form method="post" action=""> 
+          <h1>Cadastro</h1> 
+           
+          <p> 
+            <label for="nome_cad">Seu nome</label>
+            <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="Seu Nome" />
+          </p>
+           
+          <p> 
+            <label for="email_cad">Seu e-mail</label>
+            <input id="email_cad" name="email_cad" required="required" type="email" placeholder="seuemail@hotmail.com"/> 
+          </p>
+
+          <p> 
+            <label for="confirmaremail_cad">Seu e-mail</label>
+            <input id="confirmaremail_cad" name="confirmaremail_cad" required="required" type="email" placeholder="Confirme seuemail@hotmail.com"/> 
+          </p>
+
+          <p> 
+            <label for="cpf_cad">Seu CPF</label>
+            <input id="cpf_cad" name="cpf_cad" required="required" type="text" placeholder="CPF" />
+          </p>
+           
+          <p> 
+            <label for="senha_cad">Sua senha</label>
+            <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="ex. 1234"/>
+          </p>
+
+          <p> 
+            <label for="confirmarsenha_cad">Confirme sua senha</label>
+            <input id="confirmarsenha_cad" name="confirmarsenha_cad" required="required" type="password" placeholder="ex. 1234"/>
+          </p>
+
+          <p> 
+            <label for="cel_cad">Seu Telefone</label>
+            <input id="cel_cad" name="cel_cad" required="required" type="text" placeholder="DDD (XX) X-XXXXXXXX" />
+          </p>
+          
+
+          <p> 
+            <label for="genero_cad">Gênero</label>
+            <input id="genero_cad" name="genero_cad" required="required" type="text" placeholder="Cis, trans, não binário, etc.." />
+         </p>
+
+         <p> 
+            <label for="nomemae_cad">Nome da Mãe</label>
+            <input id="nomemae_cad" name="nomemae_cad" required="required" type="text" placeholder="Nome da Mãe" />
+          </p>
+
+          <p> 
+            <label for="endereço_cad">Seu Endereço</label>
+            <input id="endereço_cad" name="endereço_cad" required="required" type="text" placeholder="Rua, Cep, Complemento (Ex, Casa1, lote2)" />
+          </p>
+          
+        
+
+           
+          <p> 
+            <input type="submit" value="Cadastrar"/> 
+          </p>
+           
+          <p class="link">  
+            Já tem conta?
+            <a href="#paralogin"> Ir para Login </a>
+          </p>
+        </form>
+      </div>
+
+    </div>
+  </div>
+  <script>
+    function validarSenha() {
+      var senha = document.getElementById("senha_cad").value;
+      var confirmarSenha = document.getElementById("confirmarsenha_cad").value;
+      if (senha !== confirmarSenha) {
+        alert("As senhas não coincidem.");
+        return false;
+      }
+      return true;
+    }
+  </script>
+</body>
+<style>
+  *, *:before, *:after { 
+    margin:0;
+    padding:0;
+    font-family: monospace ,sans-serif;
+  }
+  
+  body{
+    margin:10px;
+    background-color: #f8f9fa;
+  }
+  
+  #login_page a{
+    text-decoration: none;
+  }
+  
+ 
+  #login_page a.links{
+    display: none;
+  }
+  
+ 
+  #login_page .content-login{
+    width: 500px;
+    margin: 0px auto;
+    position: relative; 
+  }
+  
+  
+  #login_page h1{
+    font-size: 48px;
+    color: #040403;
+    padding: 10px 0;
+    font-family: Arial,sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+  #login_page h1:after{
+    content: ' ';
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin-top: 10px;
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%); 
+    background: linear-gradient(left, rgba(248, 251, 252, 0) 0%,rgba(224, 233, 235, 0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%); 
+  }
+  
+  #login_page p.paragrafo-login{
+    margin-bottom:15px;
+  }
+  #login_page p:first-child{
+    margin: 0px;
+  }
+
+  #login_page label{
+    color: #405c60;
+    position: relative;
+  }
+  
+
+  #login_page ::-webkit-input-placeholder  {
+    color: #bebcbc; 
+    font-style: italic;
+  }
+  input:-moz-placeholder,
+  textarea:-moz-placeholder{
+    color: #bebcbc;
+    font-style: italic;
+  } 
+  #login_page input {
+    outline: none;
+  }
+  
+  #login_page input:not([type="checkbox"]){
+    width: 95%;
+    margin-top: 4px;
+    padding: 10px;  
+    border: 1px solid #b2b2b2;
+    
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+    box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+    
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+  }
+  
+  #login_page
+  input[type="submit"]{
+    width: 100%!important;
+    cursor: pointer;  
+    background: #ff6b6b;
+    padding: 8px 5px;
+    color: #fff;
+    font-size: 20px;  
+    border: 1px solid #fff; 
+    margin-bottom: 10px;  
+    text-shadow: 0 1px 1px #333;
+    
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    
+    transition: all 0.2s linear;
+  }
+  #login_page input[type="submit"]:hover{
+    background: #4ab3c6;
+  }
+  
+ 
+  #login_page .link{
+    position: absolute;
+    background: #e1eaeb;
+    color: #7f7c7c;
+    left: 0px;
+    height: 20px;
+    width: 440px;
+    padding: 17px 30px 20px 30px;
+    font-size: 16px;
+    text-align: right;
+    border-top: 1px solid #dbe5e8;
+  
+    -webkit-border-radius: 0 0  5px 5px;
+    border-radius: 0 0  5px 5px;
+  }
+  #login_page .link a {
+    font-weight: bold;
+    background: #ffffff;
+    padding: 6px;
+    color:#040403 ;
+    margin-left: 10px;
+    border: 1px solid #070706;
+  
+    -webkit-border-radius: 4px;
+    border-radius: 4px;  
+  
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s  linear;
+  }
+  #login_page .link a:hover {
+    color:#add9f4;
+    background: #f7f7f7;
+    border: 1px solid #ff6b6b;
+  }
+  
+
+  #cadastro, 
+  #login{
+    position: absolute;
+    top: 0px;
+    width: 88%; 
+    padding: 18px 6% 60px 6%;
+    margin: 0 0 35px 0;
+    background: rgb(247, 247, 247);
+    border: 1px solid rgba(12, 25, 27, 0.8);
+    
+    -webkit-box-shadow: 5px;
+    border-radius: 5px;
+    
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: both;
+  
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+  }
+  
+  #paracadastro:target ~ .content #cadastro,
+  #paralogin:target ~ .content #login{
+    z-index: 2;
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+  
+    -webkit-animation-delay: .1s;
+    animation-delay: .1s;
+  }
+  #registro:target ~ .content #login,
+  #paralogin:target ~ .content #cadastro{
+    -webkit-animation-name: fadeOutLeft;
+    animation-name: fadeOutLeft;
+  }
+  
+  
+  @-webkit-keyframes fadeInLeft {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(-20px);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  
+  @-webkit-keyframes fadeOutLeft {
+    0% {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+    }
+    100% {
+      opacity: 0;
+      -webkit-transform: translateX(-20px);
+    }
+  }
+  
+  @keyframes fadeOutLeft {
+    0% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+  }
+</style>
+</html>  

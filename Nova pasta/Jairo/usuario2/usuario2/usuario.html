@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Perfil do Usuário</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    
+
+    .container--usuario {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .header h1 {
+      font-size: 24px;
+      color: #333;
+    }
+
+    .header p {
+      color: #666;
+      font-size: 16px;
+    }
+
+    .profile-section {
+      margin-top: 20px;
+      padding: 20px;
+      background: #fff;
+      border: 1px solid #e0e0e0;
+      border-radius: 10px;
+    }
+
+    .profile-section h2 {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .profile-section .form-group {
+      margin-bottom: 15px;
+    }
+
+    .profile-section label {
+      display: block;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 5px;
+    }
+
+    .profile-section input {
+      width: calc(100% - 20px);
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .profile-section .form-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .profile-section .form-row .form-group {
+      flex: 1;
+      min-width: calc(50% - 10px);
+    }
+
+    .profile-section .form-row .form-group.full-width {
+      min-width: 100%;
+    }
+
+    .profile-section img {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .profile-section .add-photo {
+      color: #120a8f;
+      cursor: pointer;
+      display: block;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #ff6b6b;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: 0.3s;
+      cursor: pointer;
+      margin-top: 20px;
+      display: block;
+      width: 100px;
+      text-align: center;
+      margin: 20px auto 0;
+    }
+
+    .button:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <div class="container--usuario">
+    <div class="header">
+      <h1>Meus dados</h1>
+      <p>Confira e atualize seus dados para que você não fique de fora do seu futuro certo.</p>
+    </div>
+    <div class="profile-section">
+      <h2>Dados pessoais</h2>
+      <div class="form-group">
+        <img src="https://via.placeholder.com/100" alt="Foto de Perfil">
+        <span class="add-photo">Adicionar foto</span>
+      </div>
+      <div class="form-group">
+        <label for="nome">Nome completo</label>
+        <input type="text" id="nome" name="nome">
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="cpf">CPF</label>
+          <input type="text" id="cpf" name="cpf" placeholder="Ex: 000.000.000-00">
+        </div>
+        <div class="form-group">
+          <label for="rg">RG</label>
+          <input type="text" id="rg" name="rg" placeholder="Ex: 12345678901">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="nome-mae">Nome da mãe</label>
+          <input type="text" id="nome-mae" name="nome-mae" placeholder="Ex: Maria do Nascimento">
+        </div>
+        <div class="form-group">
+          <label for="nascimento">Data de nascimento</label>
+          <input type="text" id="nascimento" name="nascimento" placeholder="Ex: 24/02/1995">
+        </div>
+      </div>
+    </div>
+    <div class="profile-section">
+      <h2>Informações de contato</h2>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="Ex: futurocerto@gmail.com">
+        </div>
+        <div class="form-group">
+          <label for="celular">Celular</label>
+          <input type="text" id="celular" name="celular" placeholder="Ex.: (21) 90000-0000">
+        </div>
+      </div>
+    </div>
+    <a href="logout.html" class="button">Logout</a>
+  </div>
+</body>
+</html>

@@ -1,3 +1,14 @@
+.container--vamosestudar--efeito{
+    opacity: 0;
+    transition: 2s;
+    transform: translateY(50px);
+}
+
+.container--vamosestudar--efeito.active{
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .container--vamosestudar{
     width: 90%;
     margin: auto;
@@ -8,7 +19,7 @@
 .container--vamosestudar--h1{
     text-align: center;
     font-size: 2.5rem;
-    margin-bottom: -0.5rem;
+    
     font-family: monospace;
     color: #ff6b6b;
 }
@@ -25,7 +36,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 20rem;
+    width: 25rem;
     padding: 2rem;
     margin: 1rem;
 }
@@ -35,7 +46,7 @@
     background-color: #ff6b6b;
     color: white;
     border-radius: 50%;
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 .card--vamosestudar h1{
@@ -48,7 +59,7 @@
     font-size: 1.2rem;
     text-align: center;
     font-family: monospace;
-    margin-top: -1rem;
+   
 }
 
 

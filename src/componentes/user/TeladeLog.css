@@ -1,0 +1,63 @@
+/* Estilos padrão */
+.logs-tabela {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.logs-tabela label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.logs-tabela select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.logs-tabela table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.logs-tabela th, .logs-tabela td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.logs-tabela th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+
+.logs-tabela tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.logs-tabela tbody tr:hover {
+  background-color: #eaf2ff;
+}
+
+.logs-tabela th, .logs-tabela td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Mídia para tornar responsivo */
+@media screen and (max-width: 768px) {
+  .logs-tabela th, .logs-tabela td {
+    white-space: normal;
+    overflow: auto;
+    text-overflow: unset;
+  }
+
+  .logs-tabela select {
+    margin-bottom: 10px;
+  }
+}

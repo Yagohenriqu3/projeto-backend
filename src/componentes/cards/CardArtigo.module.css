@@ -2,7 +2,7 @@
 
 .card{
     width: 20rem;
-    height: 28rem;
+    height: 29.5rem;
    display: flex;
    flex-direction: column;
     text-align: center;
@@ -15,6 +15,7 @@
     font-weight: bold;
     font-family: sans-serif;
     font-size: 1.6rem;
+    padding: 0.5rem;
 }
 .card p{
     font-family: monospace;

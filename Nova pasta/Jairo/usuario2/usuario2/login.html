@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <style>
+   
+    .container--login {
+      background: #f9f9f9;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      width: 90%;
+      max-width: 500px;
+      padding: 20px;
+    }
+
+    .content {
+      display: none;
+    }
+
+    .form {
+      width: 100%;
+    }
+
+    .form .form-title {
+      text-align: center;
+      color: #333;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .form .form-label {
+      display: block;
+      color: #333;
+      margin-bottom: 5px;
+    }
+
+    .form .form-input[type="text"],
+    .form .form-input[type="email"],
+    .form .form-input[type="password"],
+    .form .form-input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    .form .form-input[type="text"]:focus,
+    .form .form-input[type="email"]:focus,
+    .form .form-input[type="password"]:focus {
+      border-color: #3498db;
+      outline: none;
+    }
+
+    .form .form-input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+    .form .form-input[type="submit"] {
+      background-color: #ff6b6b;
+      border: none;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .form .form-input[type="submit"]:hover {
+      background: #2980b9;
+    }
+
+    .form .form-link {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .form .form-link a {
+      color: #120a8f;
+      text-decoration: none;
+    }
+
+    .form .form-link a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container--login">
+    <div id="login-form" class="content">      
+      <form method="post" action="" class="form"> 
+        <h1 class="form-title">Login</h1> 
+        <p> 
+          <label for="nome-login" class="form-label">Seu nome</label>
+          <input id="nome-login" name="nome-login" required="required" type="text" placeholder="Digite seu nome" class="form-input"/>
+        </p>
+         
+        <p> 
+          <label for="email-login" class="form-label">Seu e-mail</label>
+          <input id="email-login" name="email-login" required="required" type="password" placeholder="Digite sua senha" class="form-input"/> 
+        </p>
+         
+        <p> 
+          <input type="checkbox" name="manter-logado" id="manter-logado" value="" class="form-input"/> 
+          <label for="manter-logado" class="form-label">Manter-me logado</label>
+        </p>
+         
+        <p> 
+          <input type="submit" value="Entrar" class="form-input"/> 
+        </p>
+         
+        <p class="form-link">
+          Ainda não tem conta?
+          <a href="#" onclick="showCadastro()">Cadastre-se</a>
+        </p>
+      </form>
+    </div>
+    
+    <div id="cadastro-form" class="content">
+      <form method="post" action="" onsubmit="return validarSenha()" class="form"> 
+        <h1 class="form-title">Cadastro</h1> 
+         
+        <p> 
+          <label for="nome-cad" class="form-label">Seu nome</label>
+          <input id="nome-cad" name="nome-cad" required="required" type="text" placeholder="Seu Nome" class="form-input"/>
+        </p>
+         
+        <p> 
+          <label for="email-cad" class="form-label">Seu e-mail</label>
+          <input id="email-cad" name="email-cad" required="required" type="email" placeholder="seuemail@hotmail.com" class="form-input"/> 
+        </p>
+
+        <p> 
+          <label for="cpf-cad" class="form-label">Seu CPF</label>
+          <input id="cpf-cad" name="cpf-cad" required="required" type="text" placeholder="CPF" class="form-input"/>
+        </p>
+         
+        <p> 
+          <label for="senha-cad" class="form-label">Sua senha</label>
+          <input id="senha-cad" name="senha-cad" required="required" type="password" placeholder="ex. 1234" class="form-input"/>
+        </p>
+
+        <p> 
+          <label for="confirmar-senha-cad" class="form-label">Confirme sua senha</label>
+          <input id="confirmar-senha-cad" name="confirmar-senha-cad" required="required" type="password" placeholder="ex. 1234" class="form-input"/>
+        </p>
+
+        <p> 
+          <label for="genero-cad" class="form-label">Gênero</label>
+          <input id="genero-cad" name="genero-cad" required="required" type="text" placeholder="Cis, trans, não binário, etc.." class="form-input"/>
+        </p>
+
+        <p> 
+          <label for="nome-mae-cad" class="form-label">Nome da Mãe</label>
+          <input id="nome-mae-cad" name="nome-mae-cad" required="required" type="text" placeholder="Nome da Mãe" class="form-input"/>
+        </p>
+
+        <p> 
+          <label for="cel-cad" class="form-label">Seu telefone</label>
+          <input id="cel-cad" name="cel-cad" required="required" type="text" placeholder="DDD (XX) X-XXXXXXXX" class="form-input"/>
+        </p>
+        
+        <p> 
+          <input type="submit" value="Cadastrar" class="form-input"/> 
+        </p>
+         
+        <p class="form-link">  
+          Já tem conta?
+          <a href="#" onclick="showLogin()">Ir para Login</a>
+        </p>
+      </form>
+    </div>
+  </div>
+  <script>
+    document.getElementById('login-form').style.display = 'block';
+
+    function showCadastro() {
+      document.getElementById('login-form').style.display = 'none';
+      document.getElementById('cadastro-form').style.display = 'block';
+    }
+
+    function showLogin() {
+      document.getElementById('cadastro-form').style.display = 'none';
+      document.getElementById('login-form').style.display = 'block';
+    }
+
+    function validarSenha() {
+      var senha = document.getElementById("senha-cad").value;
+      var confirmarSenha = document.getElementById("confirmar-senha-cad").value;
+      if (senha !== confirmarSenha) {
+        alert("As senhas não coincidem.");
+        return false;
+      }
+      return true;
+    }
+  </script>
+</body>
+</html>

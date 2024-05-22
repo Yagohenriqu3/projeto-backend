@@ -1,0 +1,130 @@
+.container--usuario-listarusuario {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+
+  
+  /* Formulário */
+  .container--usuario-listarusuario form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .container--usuario-listarusuario input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+  }
+  
+  .container--usuario-listarusuario button[type="submit"] {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 0 4px 4px 0;
+    background-color: #FF6B6B;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition:0.3s;
+  }
+  
+  .container--usuario-listarusuario button[type="submit"]:hover {
+    background-color: black;
+  }
+  
+  /* Lista de usuários */
+  .container--usuario-listarusuario ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .container--usuario-listarusuario li {
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+  }
+  
+  .container--usuario-listarusuario li:nth-child(odd) {
+    background-color: #f1f1f1;
+  }
+
+
+  .table--usuarios-listarusuario {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1em;
+    font-family: Arial, sans-serif;
+    
+    border: 1px solid #dddddd;
+  }
+  
+  .thead--listarusuario tr {
+    background-color: #FF6B6B;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  .th--listarusuario, 
+  .td--listarusuario {
+    padding: 12px 15px;
+  }
+  
+  .tbody--listarusuario .tr--listarusuario {
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  .tbody--listarusuario .tr--listarusuario:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+  
+  .tbody--listarusuario .tr--listarusuario:last-of-type {
+    border-bottom: 2px solid #FF6B6B;
+  }
+  
+  .tbody--listarusuario .tr--listarusuario:hover {
+    background-color: #f1f1f1;
+  }
+  
+  @media (max-width:768px){
+    .container--usuario{
+      width: 90%;
+    }
+    .table--usuarios {
+      border: 0;
+    }
+    
+    .th--listarusuario,
+    .td--listarusuario {
+      border: 0;
+      border-bottom: 1px solid #ddd;
+      display: block;
+      text-align: left;
+    }
+    
+    .th--listarusuario {
+      background-color: #FF6B6B;
+      color: white;
+      font-weight: bold;
+    }
+    
+    .td--listarusuario:before {
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    .container--usuario-listarusuario {
+      width: 100%;
+    }
+  }

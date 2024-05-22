@@ -2,7 +2,7 @@ import './CursosPsicologia.css'
 
 import Psicologiamini from './imgscursos/pscicologiamini.jpg'
 
-export default function CursoDireito() {
+export default function CursoPsicologia() {
   return (
     <div>
       <section class="section-direito">

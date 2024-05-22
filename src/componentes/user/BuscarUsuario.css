@@ -1,0 +1,67 @@
+.container--usuario {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Título */
+  .container--usuario h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Lista de usuários */
+  .container--usuario ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .container--usuario li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+  }
+  
+  .container--usuario li:nth-child(odd) {
+    background-color: #f1f1f1;
+  }
+  
+  /* Botão de deletar */
+  .listaDeUsuario--button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #d9534f;
+    font-size: 18px;
+  }
+  
+  .listaDeUsuario--button:hover {
+    color: #c9302c;
+  }
+  
+  .listaDeUsuario--icon--deletar {
+    vertical-align: middle;
+  }
+  
+  /* Papel dos usuários */
+  .container--usuario li span {
+    font-weight: bold;
+  }
+  
+  .container--usuario li span.master {
+    color: #5cb85c;
+  }
+  
+  .container--usuario li span.comum {
+    color: #5bc0de;
+  }

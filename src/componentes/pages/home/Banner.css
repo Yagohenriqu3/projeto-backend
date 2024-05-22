@@ -1,3 +1,15 @@
+.container--banner{
+    opacity: 0;
+    transition: 1s;
+    transform: translateX(50px);
+}
+
+.container--banner.active{
+    opacity: 1;
+    transform: translateX(0);
+}
+  
+
 .container--banner--home{
     display: flex;
     align-items: center;
@@ -21,6 +33,9 @@
     display: flex;
 }
 
+
+
+
 @media (max-width: 768px){
     .container--banner--home{
         flex-direction: column;
@@ -29,9 +44,6 @@
     .container--banner--home a{
         width: 90%;
     }
-}
-
-@media(max-width: 768px){
     .banner--img--grande{
         display: none;
     }
